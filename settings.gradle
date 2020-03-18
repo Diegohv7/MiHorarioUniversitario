@@ -1,0 +1,2 @@
+rootProject.name='MiHorarioUniversitario'
+include ':app'
