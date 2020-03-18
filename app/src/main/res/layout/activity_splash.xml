@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="575dp"
-        android:layout_height="850dp"
+        android:layout_width="1158dp"
+        android:layout_height="1119dp"
         app:srcCompat="@drawable/aprendemas"
-        tools:layout_editor_absoluteX="-84dp"
-        tools:layout_editor_absoluteY="-6dp" />
+        tools:layout_editor_absoluteX="-374dp"
+        tools:layout_editor_absoluteY="-194dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
