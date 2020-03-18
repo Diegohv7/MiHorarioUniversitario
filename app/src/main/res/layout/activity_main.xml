@@ -6,21 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_menu1"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="253dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="64dp"
+        android:selectAllOnFocus="false"
+        android:text="@string/btn_añadirhorario"
+        android:textColor="#00116E"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="261dp" />
+        android:id="@+id/btn_menu2"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="252dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/btn_agenda"
+        android:textColor="#00116E"
+        android:textColorHint="#000000"
+        android:textColorLink="#00BCD4"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_menu1"
+        tools:layout_editor_absoluteX="79dp" />
+
+    <TextView
+        android:id="@+id/txt_menu1"
+        android:layout_width="322dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/txt_menu1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch_menu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_menu1"
+        android:layout_width="91dp"
+        android:layout_height="57dp"
+        android:text="TEMA"
+        android:textColorLink="@android:color/background_dark"
+        android:textCursorDrawable="@android:color/background_dark"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="658dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
