@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="Añadir Horario" />
+    <item
+        android:id="@+id/item2"
+        android:title="Borrar Horario" />
+    <item
+        android:id="@+id/item3"
+        android:title="Ajustes" />
+    <item
+        android:id="@+id/item4"
+        android:enabled="true"
+        android:icon="@color/colorPrimaryDark"
+        android:menuCategory="container"
+        android:title="Soporte" />
+</menu>

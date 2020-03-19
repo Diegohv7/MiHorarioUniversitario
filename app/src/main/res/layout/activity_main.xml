@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <Button
         android:id="@+id/btn_menu1"
@@ -70,6 +72,7 @@
         android:layout_width="91dp"
         android:layout_height="57dp"
         android:layout_marginTop="164dp"
+        android:background="@android:color/background_light"
         android:text="TEMA"
         android:textColorLink="@android:color/background_dark"
         android:textCursorDrawable="@android:color/background_dark"
@@ -79,6 +82,10 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_menu1"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.0" /><![CDATA[
 
+    android:text="Color 1"/>
+
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
