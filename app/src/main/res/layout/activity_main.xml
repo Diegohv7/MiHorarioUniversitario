@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fondo"
@@ -9,14 +9,15 @@
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
+
     <Button
         android:id="@+id/btn_menu1"
         style="@android:style/Widget.Button.Inset"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_width="157dp"
+        android:layout_height="78dp"
         android:layout_marginStart="131dp"
         android:layout_marginLeft="131dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="130dp"
         android:layout_marginRight="130dp"
         android:layout_marginBottom="24dp"
@@ -33,11 +34,11 @@
     <Button
         android:id="@+id/btn_menu2"
         style="@android:style/Widget.Button.Inset"
-        android:layout_width="154dp"
-        android:layout_height="60dp"
+        android:layout_width="156dp"
+        android:layout_height="69dp"
         android:layout_marginStart="130dp"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="350dp"
         android:text="@string/btn_agenda"
         android:textColor="#00116E"
         android:textColorHint="#000000"
@@ -51,37 +52,33 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="670dp"
         android:background="#FFFFFF"
         android:checked="false"
         android:onClick="eventoClick"
         android:text="TEMA"
+        android:textColorHighlight="#001171"
+        android:textColorLink="#001171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_menu1" />
 
     <TextView
         android:id="@+id/txt_menu1"
-        android:layout_width="291dp"
-        android:layout_height="76dp"
+        android:layout_width="309dp"
+        android:layout_height="54dp"
         android:layout_marginStart="13dp"
         android:layout_marginLeft="13dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="13dp"
         android:layout_marginRight="13dp"
         android:text="@string/txt_menu1"
         android:textColor="#B85B5B"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_menu2" /><![CDATA[
 
-
-
-    android:text="Color 1"/>
-
-
-
 ]]>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

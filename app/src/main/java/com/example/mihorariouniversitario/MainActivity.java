@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 
+import java.util.Objects;
 import java.util.zip.CheckedInputStream;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true) ;
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
+
         fondo=(ConstraintLayout)  findViewById(R.id.fondo);
         tema= findViewById(R.id.switch1 );
 

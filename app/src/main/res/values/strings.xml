@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TU HORARIO UNIVERSITARIO</string>
+    <string name="app_name">TU HORARIO</string>
     <string name="btn_añadirhorario">Ver Horario</string>
     <string name="btn_agenda">Agenda</string>
     <string name="txt_menu1">Tú próxima materia es: </string>
