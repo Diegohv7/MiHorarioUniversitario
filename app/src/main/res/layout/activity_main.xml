@@ -1,90 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#E1DCDC"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
     <Button
         android:id="@+id/btn_menu1"
         style="@android:style/Widget.Button.Inset"
-        android:layout_width="297dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="24dp"
         android:selectAllOnFocus="false"
         android:text="@string/btn_añadirhorario"
         android:textColor="#00116E"
-        android:textSize="36sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btn_menu2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
-
-    <TextView
-        android:id="@+id/txt_menu1"
-        android:layout_width="350dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="240dp"
-        android:text="@string/txt_menu1"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_menu2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_menu2"
         style="@android:style/Widget.Button.Inset"
-        android:layout_width="299dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="372dp"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="44dp"
         android:text="@string/btn_agenda"
         android:textColor="#00116E"
         android:textColorHint="#000000"
         android:textColorLink="#00BCD4"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.596"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu1" />
 
     <Switch
-        android:id="@+id/switch_menu1"
-        android:layout_width="91dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="164dp"
-        android:background="@android:color/background_light"
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:checked="false"
+        android:onClick="eventoClick"
         android:text="TEMA"
-        android:textColorLink="@android:color/background_dark"
-        android:textCursorDrawable="@android:color/background_dark"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_menu1"
-        app:layout_constraintVertical_bias="0.0" /><![CDATA[
+        app:layout_constraintTop_toBottomOf="@+id/txt_menu1" />
+
+    <TextView
+        android:id="@+id/txt_menu1"
+        android:layout_width="291dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="@string/txt_menu1"
+        android:textColor="#B85B5B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu2" /><![CDATA[
+
+
 
     android:text="Color 1"/>
+
 
 
 ]]>
