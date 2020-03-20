@@ -19,7 +19,7 @@ import java.util.zip.CheckedInputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ConstraintLayout fondo;
+    private RelativeLayout fondo;
     private Switch  tema;
 
 
@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fondo=(ConstraintLayout)  findViewById(R.id.fondo);
+        fondo=(RelativeLayout) findViewById(R.id.fondo);
         tema= findViewById(R.id.switch1 );
 
     }
-
+    //cambiar tema
     public void eventoClick(View view){
 
         if (tema.isChecked() ){
@@ -39,8 +39,11 @@ public class MainActivity extends AppCompatActivity {
         }else {
             fondo.setBackgroundColor(Color.WHITE );
         }
-
-
+    }
+    //llamar a activity ver horario
+    public void Siguiente(View view){
+        Intent siguiente=new Intent(this, Horario .class ) ;
+        startActivity(siguiente);
     }
 
 
