@@ -10,25 +10,31 @@
 
     <Button
         android:id="@+id/button"
-        style="@android:style/Widget.Button.Inset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="144dp"
+        android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="190dp"
         android:onClick="Siguiente"
-        android:text="@string/btn_añadirhorario" />
+        android:text="@string/btn_añadirhorario"
+        android:textColor="#001171"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
 
     <Button
         android:id="@+id/button2"
-        style="@android:style/Widget.Button.Inset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="146dp"
+        android:layout_height="80dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="258dp"
-        android:text="@string/btn_agenda" />
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="312dp"
+        android:text="@string/btn_agenda"
+        android:textColor="#001171"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
     <Switch
         android:id="@+id/switch1"
