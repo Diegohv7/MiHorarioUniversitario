@@ -18,7 +18,7 @@ public class tablehorario {
     private int indexC;
     private int indexR;
     private boolean multicolor=false;
-    private int firtColor, secondColor,textColor;
+    private int firstColor, secondColor,textColor;
 
     public tablehorario(TableLayout tableLayout , Context context) {
         this.tableLayout =tableLayout ;
@@ -98,7 +98,7 @@ public class tablehorario {
                 txtCell .setBackgroundColor((multicolor)?firtColor :secondColor) ;//bandera para colores de filas
             }
         }
-        this.firtColor =firtColor ;
+        this.firstColor =firstColor ;
         this.secondColor =secondColor ;
     }
     //colo de lineas de la tabla en columnas
@@ -125,7 +125,7 @@ public class tablehorario {
         multicolor =!multicolor ;
         while (indexC <header .length ){
             txtCell =getCell(data.size() -1,indexC ++);
-            txtCell .setBackgroundColor((multicolor )?firtColor :secondColor );//bandera de colores
+            txtCell .setBackgroundColor((multicolor )?firstColor :secondColor );//bandera de colores
             txtCell .setTextColor(textColor ) ;
         }
     }

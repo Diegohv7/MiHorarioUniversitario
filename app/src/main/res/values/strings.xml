@@ -3,6 +3,7 @@
     <string name="btn_añadirhorario">Ver Horario</string>
     <string name="btn_agenda">Agenda</string>
     <string name="txt_menu1">Tú próxima materia es: </string>
-
-
+    <string name="txt_agenda1">Selecciona un día y escribe tu nota:</string>
+    <string name="btn_guardarnota">Guardar Nota</string>
+    <string name="btn_vermisnota">Ver mis Notas</string>
 </resources>
