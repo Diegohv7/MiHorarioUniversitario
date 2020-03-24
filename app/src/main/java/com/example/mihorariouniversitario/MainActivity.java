@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         tema = findViewById(R.id.switch1);
     }
 
+    public void Agenda(View view){
+     Intent agenda = new Intent(this, AgendaActivity.class);
+     startActivity(agenda);
+    }
+
     //cambiar tema
     public void eventoClick(View view) {
         if (tema.isChecked()) {
