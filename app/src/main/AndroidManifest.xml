@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AgendaActivity"></activity>
+        <activity android:name=".ListeventosActivity"></activity>
+        <activity android:name=".AddeventosActivity" />
+        <activity android:name=".AgendaActivity" />
         <activity android:name=".Horario" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
