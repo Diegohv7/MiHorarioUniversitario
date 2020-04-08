@@ -7,7 +7,7 @@
     tools:context=".AddeventosActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtNombreEvento"
         style="@android:style/Widget.Material.Light.AutoCompleteTextView"
         android:layout_width="376dp"
         android:layout_height="51dp"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.017" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtUbicacion"
         style="@android:style/Widget.Material.Light.AutoCompleteTextView"
         android:layout_width="376dp"
         android:layout_height="48dp"
@@ -41,10 +41,10 @@
         app:layout_constraintVertical_bias="0.08" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtDescripcion"
         style="@android:style/Widget.Material.Light.AutoCompleteTextView"
-        android:layout_width="378dp"
-        android:layout_height="49dp"
+        android:layout_width="383dp"
+        android:layout_height="54dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Descripción"
@@ -52,16 +52,17 @@
         android:textColorHighlight="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.462" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="376dp"
         android:layout_height="18dp"
         android:layout_marginTop="92dp"
+        android:layout_marginBottom="608dp"
         android:text="Desde"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +76,7 @@
         android:layout_width="375dp"
         android:layout_height="18dp"
         android:layout_marginTop="140dp"
+        android:layout_marginBottom="508dp"
         android:text="Hasta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +86,7 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <Button
-        android:id="@+id/btn_guardaragenda"
+        android:id="@+id/btnGuaradar"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:layout_width="137dp"
         android:layout_height="70dp"
@@ -97,13 +99,13 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.738" />
 
     <Button
-        android:id="@+id/btn_cancelaragenda"
+        android:id="@+id/btnCancelar"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:layout_width="149dp"
         android:layout_height="68dp"
@@ -114,15 +116,41 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="377dp"
+        android:id="@+id/edtFechaHasta"
+        android:layout_width="375dp"
         android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <EditText
+        android:id="@+id/edtFechaDesde"
+        android:layout_width="378dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <EditText
+        android:id="@+id/edtHoraInicio"
+        android:layout_width="377dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,18 +158,19 @@
         app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.236" />
 
     <EditText
-        android:id="@+id/editText6"
-        android:layout_width="378dp"
-        android:layout_height="39dp"
+        android:id="@+id/edtHoraHasta"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.385" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

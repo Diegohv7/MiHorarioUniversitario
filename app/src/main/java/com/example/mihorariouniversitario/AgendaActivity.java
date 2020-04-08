@@ -35,11 +35,9 @@ public class AgendaActivity extends AppCompatActivity implements CalendarView.On
         final int dia, mes, año;
         int mes1;
         dia = i;
-        mes1 = i1;
+        mes = i1+1;
         año = i2;
-        mes1++;
 
-        mes = mes1;
         builder.setTitle("Seleccione una tarea")
                 .setItems(items, new DialogInterface.OnClickListener() {
 
