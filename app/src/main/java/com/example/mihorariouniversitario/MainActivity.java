@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         fondo = (RelativeLayout) findViewById(R.id.fondo);
         tema = findViewById(R.id.switch1);
     }
+    //llamar a activity ver horario
+    public void VerHorario(View view) {
+        Intent siguiente = new Intent(this, verHorario   .class);
+        startActivity(siguiente);
+    }
 
     public void Agenda(View view){
      Intent agenda = new Intent(this, AgendaActivity.class);
@@ -43,18 +48,13 @@ public class MainActivity extends AppCompatActivity {
             fondo.setBackgroundColor(Color.WHITE);
         }
     }
-
-    //llamar a activity ver horario
-    public void Siguiente(View view) {
-        Intent siguiente = new Intent(this, Horario.class);
-        startActivity(siguiente);
-    }
-
-
+//menu de mainactivity
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.overflow, menu);
         return true;
     }
+
+
 
 }
 

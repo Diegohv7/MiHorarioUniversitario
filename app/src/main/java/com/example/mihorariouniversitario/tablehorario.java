@@ -129,7 +129,6 @@ public class tablehorario {
             txtCell .setTextColor(textColor ) ;
         }
     }
-
     private TableRow getRow(int index){
         return (TableRow )tableRow .getChildAt(index );
     }

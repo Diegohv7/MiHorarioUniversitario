@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">TU HORARIO</string>
-    <string name="btn_añadirhorario">Ver Horario</string>
     <string name="btn_agenda">Agenda</string>
     <string name="txt_menu1">Tú próxima materia es: </string>
     <string name="txt_agenda1">Selecciona un día y escribe tu nota:</string>
     <string name="btn_guardaragenda">Guardar</string>
     <string name="btn_cancelaragenda">Cancelar</string>
+    <string name="btn_añadirhorario">Ver Horario</string>
+    <string name="title_activity_ver_horario">verHorario</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
