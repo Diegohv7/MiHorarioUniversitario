@@ -13,7 +13,7 @@
         android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese nombre de evento"
+        android:hint="Nombre del Tema"
         android:textColor="#001171"
         android:textColorHighlight="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese ubicación"
+        android:hint="Materia"
         android:textColor="#001171"
         android:textColorHighlight="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,8 +46,8 @@
         android:layout_width="383dp"
         android:layout_height="54dp"
         android:ems="10"
+        android:hint="Descripción"
         android:inputType="textPersonName"
-        android:text="Descripción"
         android:textColor="#001171"
         android:textColorHighlight="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +55,7 @@
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.472" />
 
     <TextView
         android:id="@+id/textView"
@@ -63,7 +63,7 @@
         android:layout_height="18dp"
         android:layout_marginTop="92dp"
         android:layout_marginBottom="608dp"
-        android:text="Desde"
+        android:text="Fecha de Entrega"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
@@ -76,11 +76,11 @@
         android:layout_width="375dp"
         android:layout_height="18dp"
         android:layout_marginTop="140dp"
-        android:layout_marginBottom="508dp"
-        android:text="Hasta"
+        android:layout_marginBottom="500dp"
+        android:text="Fecha de Presentación"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText"
         app:layout_constraintVertical_bias="0.019" />
@@ -126,51 +126,55 @@
         android:layout_width="375dp"
         android:layout_height="39dp"
         android:ems="10"
+        android:hint="31/12/200"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <EditText
         android:id="@+id/edtFechaDesde"
         android:layout_width="378dp"
         android:layout_height="39dp"
         android:ems="10"
+        android:hint="31/12/2000"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <EditText
         android:id="@+id/edtHoraInicio"
         android:layout_width="377dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:hint="23:59:59"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.248" />
 
     <EditText
         android:id="@+id/edtHoraHasta"
         android:layout_width="379dp"
         android:layout_height="51dp"
         android:ems="10"
+        android:hint="23:59:59"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.395" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

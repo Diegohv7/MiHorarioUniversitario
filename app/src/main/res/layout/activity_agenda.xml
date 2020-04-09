@@ -8,8 +8,16 @@
 
     <CalendarView
         android:id="@+id/calendarView"
+        style="@android:style/Widget.Holo.Light.CalendarView"
         android:layout_width="410dp"
         android:layout_height="734dp"
+        android:forceDarkAllowed="true"
+        android:maxDate="31/12/2200"
+        android:showWeekNumber="false"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="true"
+        android:weekNumberColor="#001171"
+        android:weekSeparatorLineColor="#001171"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

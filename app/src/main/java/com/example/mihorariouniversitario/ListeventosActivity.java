@@ -53,7 +53,7 @@ public class ListeventosActivity extends AppCompatActivity implements AdapterVie
                    fechadesde=c.getString(3);
                    fechahasta=c.getString(5);
                    descripcion=c.getString(7);
-                   arrayAdapter.add(nombre+", "+ubicacion+", "+fechadesde+", "+fechahasta+", "+descripcion);
+                   arrayAdapter.add(nombre+" - "+ubicacion+" - "+fechadesde+" - "+fechahasta+" - "+descripcion);
                }while(c.moveToNext());
                listView.setAdapter(arrayAdapter);
            }else{
@@ -84,7 +84,7 @@ public class ListeventosActivity extends AppCompatActivity implements AdapterVie
     }
 
     @Override
-    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+    public boolean onItemLongClick(final AdapterView<?> adapterView, View view, int i, long l) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         CharSequence [] items = new CharSequence[2];
         items[0]="Eliminar evento";
@@ -95,6 +95,7 @@ public class ListeventosActivity extends AppCompatActivity implements AdapterVie
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (i == 0) {
+                            eliminar(adapterView.getItemAtPosition(i).toString());
 
                         }
                     }
